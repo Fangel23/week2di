@@ -1,44 +1,40 @@
-// using this array,
-// var array = ["Banana", "Apples", "Oranges", "Blueberries"];
 
 
-// 1. Remove the Banana from the array.
 
-// 2. Sort the array in order.
+// var arr = (prompt("What is your list of words"));
+// var arr2 = arr.split(" ");
+var arr2 = ['faine', 'yullllllllllia', 'mhwdhw'];
 
-// 3. Put "Kiwi" at the end of the array.
-
-// 4. Remove "Apples" from the array.
-
-// 5. Sort the array in reverse order. (Not alphabetical, but reverse
-// the current Array i.e. ['a', 'c', 'b'] becomes ['b', 'c', 'a'])
-
-// you should have at the end:
-// ["Kiwi", "Oranges", "Blueberries"]
-
-// using this array,
-// var array2 = ["Banana", ["Apples", ["Oranges"], "Blueberries"]];
-// access "Oranges".
-
-var array = ["Banana", "Apples", "Oranges", "Blueberries"];
-
-// 1.
-// var y = array.shift();
-//console.log(y);
+console.log(arr2);
 
 
-// 2.
-// var y = array.sort();
-// console.log(y);
+function my_f(arr2) {
+	for (let item = 0; item < arr2.length-1; item++){
+		let width = 0;
+		if (arr2[item].length > arr2[item+1].length){
+			console.log(arr2[item]);
+			width = (arr2[item].length) + 4;
+			console.log(width)}}
+		
+		let star ="";
 
-// 3.
-// array[array.length] = "Kiwi"; 
-// console.log(array);
+ 	for (let j = 0; j<width; j++){
+ 			star = star + "*";
+ 		} 
+ 		console.log(star);
+ 		
+ 	for (z of arr2){
+ 		let marginRight = (width +1 - arr2[z].length);
+ 		console.log(marginRight);
+ 		let rightSpaces = "";
+ 	
+ 		for (i = 0; i<marginRight; i++){
+ 			rightSpaces = rightSpaces + " ";
+ 		}
+ 		console.log("* " + word + rightSpaces + "*");	
+ 	}
+ 	console.log(star);	
 
-//4.
-// var y =  array.splice(1,1);
-// console.log(array);
+}
 
-//5.
-// var y = array.reverse();
-// console.log(y);
+my_f(arr2);
